@@ -41,12 +41,12 @@ def send_daily_reminder():
 app.conf.beat_schedule = {
     'send_daily_reminder': {
         'task': 'tasks.send_daily_reminder',
-        'schedule': crontab(minute="*/3"),
+        'schedule': crontab(hour="09", minute="00"),
     },
 }
 
 app.conf.update(
-    timezone='Asia/Tashkent',
+    timezone='Europe/Moscow',
     result_expires=3600
 )
 
