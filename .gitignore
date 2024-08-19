@@ -1,0 +1,11 @@
+.idea
+.env
+celerybeat-schedule.bak
+celerybeat-schedule.dat
+celerybeat-schedule.dir
+debug.log
+users.db
+logs
+keyboards
+test.py
+test_get_users.py
